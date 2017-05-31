@@ -3,7 +3,7 @@
       loop: true,
       margin: 1,
       nav : true,
-      autoplay: true,
+      // autoplay: true,
       navText: true,
       navigation:true,
       pagination : true,
