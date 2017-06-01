@@ -4,7 +4,23 @@
   text-align: left;
   position: relative;
 }
-
+.title-center{
+  text-align: center;
+  h3{
+    text-align: center;
+  }
+  .title-line{
+    margin: 0 auto;
+    float: none;
+  }
+  p{
+    margin-top: 15px;
+    text-align: center;
+    padding: 0 200px;
+    box-sizing: border-box;
+    line-height: 24px;
+  }
+}
 h3{
   width: 100%;
   float: left;
