@@ -1,4 +1,45 @@
 .who-we-are{
   width: 100%;
   float: left;
+  background-color: #f7f7f7;
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+
+
+.who-we-are__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  height: 485px;
+  background-color: #fff;
+  box-shadow: 0 0 59px rgba(204, 204, 204, 0.39);
+}
+
+.who-we-are__wrap_pic{
+  width: 661px;
+  height: 485px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.who-we-are__wrap_content{
+  width: calc(100% - 661px);
+  float: left;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  p{
+    width: 100%;
+    margin-top: 15px;
+  }
+  .btn{
+    margin-top: 70px;
+  }
 }
