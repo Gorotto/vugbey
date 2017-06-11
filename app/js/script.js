@@ -11,3 +11,20 @@
       dots: true,
       singleItem:false
     });
+
+/*mixItUp*/
+  $('.works__wrap').mixItUp();
+/*mixItUp*/
+
+/*lightbox*/
+$('.lightboxs').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
+
+  });
+
+/*lightbox*/

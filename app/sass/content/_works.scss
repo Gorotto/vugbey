@@ -1,0 +1,81 @@
+.works{
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.works__nav{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+  box-sizing: border-box;
+  button{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    outline: none;
+    margin: 0 5px;
+  }
+  .mixitup-control-active{
+    color: $gold;
+  }
+}
+
+.works__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.works__wrap .mix{
+  width: 25%;
+  float: left;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &:hover .thumb-hover{
+    display: block;
+  }
+}
+
+.thumb-hover{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(36, 40, 47, 0.8);
+  padding: 65px 0;
+  box-sizing: border-box;
+  i{
+    text-align: center;
+    color: $gold;
+    font-size: 35px;
+  }
+  span{
+    width: 100%;
+    text-align: center;
+    float: left;
+    color: $gold;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: $or;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
