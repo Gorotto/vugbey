@@ -22,18 +22,22 @@
   width: 100%;
   float: left;
   position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
 }
 
 .how-we-work__content_row-title{
   width: 100%;
   float: left;
   position: relative;
+  cursor: pointer;
   .number{
     color: $gold;
     font-family: $ob;
     font-size: 18px;
     font-weight: 700;
-    line-height: 30px;
+    // line-height: 30px;
     float: left;
     width: 30px;
     text-align: left;
@@ -45,10 +49,19 @@
   }
 }
 
+.how-we-work__content_row-hide{
+  display: none;
+  width: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
 .plus-icon{
   float: left;
   width: 18px;
   height: 18px;
+  transition: all .3s ease;
   &:after{
     content: "";
     display: inline-block;
@@ -73,4 +86,9 @@
    -o-transform: rotate(0deg);
     top: 10px;
   }
+}
+
+.plus-icon__rotate{
+  transform: rotate(45deg);
+  transition: all .3s ease;
 }

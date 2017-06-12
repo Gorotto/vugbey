@@ -26,5 +26,16 @@ $('.lightboxs').magnificPopup({
     }
 
   });
-
 /*lightbox*/
+
+/*spoiler*/
+$(".how-we-work__content_row-title").click(function () {
+    $(this).next(".how-we-work__content_row-hide").slideToggle();
+      if(  $(this).children().hasClass('plus-icon__rotate') ){
+         $(this).parent('.how-we-work__content_row').find('.plus-icon').removeClass('plus-icon__rotate');
+       }else{
+           $(this).parent('.how-we-work__content_row').find('.plus-icon').addClass('plus-icon__rotate');
+       }
+       return false;
+  });
+/*spoiler*/
