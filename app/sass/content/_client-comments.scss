@@ -1,0 +1,28 @@
+.client-comments{
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+
+.client-comments__wrap{
+  width: 80%;
+  float: none;
+  margin: 60px auto 0;
+  position: relative;
+  display: inline-block!important;
+}
+
+.client-comments__wrap_item_thumb{
+  size: 90px;
+  float: none;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  img{
+    size: 100%;
+    object-fit: cover;
+  }
+}
