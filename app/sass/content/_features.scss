@@ -1,0 +1,48 @@
+.features{
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #fff;
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+
+.features__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 120px;
+}
+
+.features__wrap_left{
+  width: 40%;
+  float: left;
+}
+
+.features__wrap_right{
+  width: 40%;
+  float: right;
+}
+
+.features__item{
+  float: left;
+  width: 100%;
+  margin-bottom: 65px;
+  p{
+    float: left;
+    width: calc(100% - 80px);
+    line-height: 24px;
+    margin: 0;
+  }
+}
+
+
+.features__item_thumb{
+  size: 64px;
+  float: left;
+  position: relative;
+  margin-right: 15px;
+  img{
+    size: 100%;
+  }
+}

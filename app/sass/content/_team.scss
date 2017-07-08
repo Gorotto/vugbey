@@ -13,7 +13,7 @@
   display: -ms-flex;
   display: flex;
   float: left;
-  padding: 0 115px;
+  padding: 0 50px;
   box-sizing: border-box;
   flex-flow: row wrap;
   margin-top: 75px;
@@ -41,6 +41,8 @@
   width: calc(100% - 145px);
   text-align: left;
   margin-bottom: 75px;
+  padding-right: 20px;
+  box-sizing: border-box;
   h4{
     color: $gold;
   }
