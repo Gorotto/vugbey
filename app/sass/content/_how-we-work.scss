@@ -2,7 +2,7 @@
   width: 100%;
   float: left;
   position: relative;
-  text-align: left;
+  text-align: center;
   padding: 120px 0;
   box-sizing: border-box;
   background-color: #f7f7f7;
@@ -10,12 +10,22 @@
 
 .how-we-work__pic{
   float: left;
-  width: 40%;
+  width: 50%;
+  height: 460px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  img{
+    width: 360px;
+  }
 }
 
 .how-we-work__content{
   float: left;
-  width: 40%;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  padding-right: 10%;
+  box-sizing: border-box;
 }
 
 .how-we-work__content_row{

@@ -32,6 +32,16 @@ h3{
   position: relative;
 }
 
+h4{
+  width: 100%;
+  float: left;
+  margin: 0;
+  font-family: $nb;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 .title-line{
   background-color: $gold;
   width: 77px;
