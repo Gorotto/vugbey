@@ -62,8 +62,19 @@
   height: 100%;
   text-align: center;
   background-color: rgba(36, 40, 47, 0.8);
-  padding: 65px 0;
+  // padding: 65px 0;
   box-sizing: border-box;
+
+}
+
+
+.thumb-hover__wrap{
+  width: 100%;
+  display: inline-block;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 36%;
   i{
     text-align: center;
     color: $gold;

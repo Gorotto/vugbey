@@ -1,0 +1,141 @@
+.footer{
+  width: 100%;
+  float: left;
+  position: relative;
+
+}
+
+.footer-top__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #2b2f35;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+}
+
+.footer-top__wrap_about{
+  float: left;
+  width: 30%;
+  text-align: left;
+  margin-right: 100px;
+  p{
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 24px;
+  }
+}
+
+
+.footer-top__wrap_contacts{
+  float: left;
+  width: 25%;
+  p,a,small{
+    font-family: $or;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 24px;
+    width: 100%;
+    text-align: left;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+  small{
+    margin-right: 5px;
+    width: auto;
+  }
+  a:hover{
+    color: $gold;
+  }
+}
+
+
+.footer__title{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: left;
+  color: $gold;
+  font-size: 14px;
+  font-family: $nb;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.footer-top__wrap_subscription{
+  width: 300px;
+  float: right;
+  position: relative;
+  form{
+    width: 100%;
+    float: left;
+    input{
+      width: 100%;
+      float: left;
+      height: 37px;
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      background-color: transparent;
+      line-height: 24px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.65);
+      text-align: left;
+      padding-left: 15px;
+      box-sizing: border-box;
+      font-family: $or;
+    }
+    button{
+      width: 100%;
+      float: left;
+      position: relative;
+      height: 37px;
+      border: none;
+      text-align: center;
+      outline: none;
+      color: rgba(255, 255, 255, 0.65);
+      font-family: $or;
+      font-size: 14px;
+      line-height: 24px;
+      display: inline-block;
+      margin-top: 20px;
+      background-color: $gold;
+    }
+  }
+}
+
+
+.footer-bottom__wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #24282f;
+  padding: 25px 0;
+  box-sizing: border-box;
+  p{
+    color: rgba(255, 255, 255, 0.65);
+  }
+}
+
+.footer-bottom__wrap_social{
+  float: right;
+  text-align: right;
+  a{
+    size: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+    i{
+      color: rgba(255, 255, 255, 0.65);
+      transform: translateY(50%);
+    }
+    &:hover{
+      background-color: $gold;
+    }
+  }
+}
