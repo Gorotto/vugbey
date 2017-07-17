@@ -21,6 +21,20 @@
     line-height: 24px;
   }
 }
+
+h2{
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin: 0;
+  text-transform: uppercase;
+  color: #24282f;
+  font-family: $nb;
+  font-size: 65px;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
 h3{
   width: 100%;
   float: left;
@@ -67,6 +81,8 @@ p{
 .btn{
   min-width: 164px;
   height: 50px;
+  display: inline-block;
+  float: none;
   border: 1px solid $gold;
   border-radius: 25px;
   color: $gold;
