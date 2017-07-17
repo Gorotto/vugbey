@@ -103,6 +103,11 @@
      margin-top: 14px;
     }
   }
+  @include breakpoint(max-width 670px){
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .client-comments__wrap_item{

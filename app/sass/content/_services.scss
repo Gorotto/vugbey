@@ -10,7 +10,11 @@
 .services__wrap{
   width: 80%;
   float: none;
-  margin: 0 auto;
+  margin: 100px auto 0;
+  display: inline-block;
+  @include breakpoint(max-width 670px){
+    width: 100%;
+  }
 }
 
 .services__wrap_item{
@@ -20,6 +24,15 @@
   text-align: center;
   p{
     line-height: 24px;
+  }
+  @include breakpoint(max-width 670px){
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -33,5 +46,26 @@
   line-height: 24px;
   font-family: $nb;
   color: #000;
+  margin-bottom: 10px;
+}
 
+.services__wrap_item-thumb{
+  size: 100px;
+  border: 1px solid $gold;
+  border-radius: 50%;
+  display: block;
+  float: none;
+  margin: 0 auto 40px;
+  position: relative;
+  img{
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    position: absolute;
+    display: inline-block;
+    left: calc(50% - 20px);
+  }
+  @include breakpoint(max-width 670px){
+    margin-bottom: 20px;
+  }
 }

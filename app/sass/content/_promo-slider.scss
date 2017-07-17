@@ -140,7 +140,7 @@
 
 
 .promo-slider__item_content{
-  min-width: 1000px;
+  width: 1000px;
   float: none;
   position: absolute;
   display: inline-block;
@@ -164,5 +164,11 @@
   .btn{
     background-color: $gold;
     color: #fff;
+  }
+  @include breakpoint(max-width 770px){
+    width: 100%;
+    left: 0;
+    padding: 0 70px;
+    box-sizing: border-box;
   }
 }

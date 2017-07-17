@@ -14,6 +14,9 @@
   height: 485px;
   background-color: #fff;
   box-shadow: 0 0 59px rgba(204, 204, 204, 0.39);
+  @include breakpoint(max-width 770px){
+    height: auto;
+  }
 }
 
 .who-we-are__wrap_pic{
@@ -26,6 +29,12 @@
     width: 100%;
     object-fit: contain;
   }
+  @include breakpoint(max-width 770px){
+    width: 100%;
+  }
+  @include breakpoint(max-width 670px){
+    height: auto;
+  }
 }
 
 .who-we-are__wrap_content{
@@ -35,11 +44,23 @@
   padding-right: 75px;
   padding-top: 100px;
   box-sizing: border-box;
+  @include breakpoint(max-width 770px){
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include breakpoint(max-width 670px){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   p{
     width: 100%;
     margin-top: 15px;
   }
   .btn{
     margin-top: 70px;
+    @include breakpoint(max-width 770px){
+      margin-top: 40px;
+    }
   }
 }

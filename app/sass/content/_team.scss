@@ -17,10 +17,17 @@
   box-sizing: border-box;
   flex-flow: row wrap;
   margin-top: 75px;
+  @include breakpoint(max-width 670px){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .team__wrap_item{
   flex-basis: 50%;
+  @include breakpoint(max-width 670px){
+    flex-basis: 100%;
+  }
 }
 
 .team__wrap_item_thumb{

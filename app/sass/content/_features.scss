@@ -17,11 +17,29 @@
 .features__wrap_left{
   width: 40%;
   float: left;
+  @include breakpoint(max-width 670px){
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    .features__item:last-of-type{
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .features__wrap_right{
   width: 40%;
   float: right;
+  @include breakpoint(max-width 670px){
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    .features__item:last-of-type{
+      margin-bottom: 0;
+    }
+  }
 }
 
 .features__item{
@@ -33,6 +51,12 @@
     width: calc(100% - 80px);
     line-height: 24px;
     margin: 0;
+  }
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  @include breakpoint(max-width 670px){
+    margin-bottom: 40px;
   }
 }
 

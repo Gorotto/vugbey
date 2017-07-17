@@ -16,6 +16,10 @@
   box-sizing: border-box;
   img{
     width: 360px;
+    height: 100%;
+  }
+  @include breakpoint(max-width 670px){
+    display: none;
   }
 }
 
@@ -26,6 +30,12 @@
   text-align: left;
   padding-right: 10%;
   box-sizing: border-box;
+  @include breakpoint(max-width 670px){
+    width: 100%;
+    margin-top: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
 
 .how-we-work__content_row{

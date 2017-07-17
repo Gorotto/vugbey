@@ -19,6 +19,9 @@
     padding: 0 200px;
     box-sizing: border-box;
     line-height: 24px;
+    @include breakpoint(max-width 670px){
+      padding: 0;
+    }
   }
 }
 
@@ -34,7 +37,14 @@ h2{
   position: relative;
   display: inline-block;
   float: left;
+  @include breakpoint(max-width 770px){
+    font-size: 50px;
+  }
+  @include breakpoint(max-width 670px){
+    font-size: 40px;
+  }
 }
+
 h3{
   width: 100%;
   float: left;

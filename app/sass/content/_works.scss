@@ -51,6 +51,10 @@
   &:hover .thumb-hover{
     display: block;
   }
+  @include breakpoint(max-width 670px){
+    width: 50%;
+    height: 200px;
+  }
 }
 
 .thumb-hover{
