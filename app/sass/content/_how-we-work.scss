@@ -18,6 +18,9 @@
     width: 360px;
     height: 100%;
   }
+  @include breakpoint(max-width 770px){
+    display: none;
+  }
   @include breakpoint(max-width 670px){
     display: none;
   }
@@ -30,11 +33,17 @@
   text-align: left;
   padding-right: 10%;
   box-sizing: border-box;
-  @include breakpoint(max-width 670px){
+  @include breakpoint(max-width 770px){
     width: 100%;
     margin-top: 0;
     padding-right: 40px;
     padding-left: 40px;
+  }
+  @include breakpoint(max-width 670px){
+    width: 100%;
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 

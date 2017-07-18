@@ -17,16 +17,27 @@
   box-sizing: border-box;
   flex-flow: row wrap;
   margin-top: 75px;
+  @include breakpoint(max-width 770px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   @include breakpoint(max-width 670px){
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .team__wrap_item{
   flex-basis: 50%;
+  @include breakpoint(max-width 770px){
+    margin-bottom: 40px;
+  }
   @include breakpoint(max-width 670px){
     flex-basis: 100%;
+    margin-bottom: 40px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -39,6 +50,10 @@
   img{
     size: 100%;
 
+  }
+  @include breakpoint(max-width 670px){
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -60,6 +75,14 @@
     font-size: 14px;
     font-family: $or;
     line-height: 24px;
+  }
+  @include breakpoint(max-width 770px){
+    margin-bottom: 0;
+  }
+  @include breakpoint(max-width 670px){
+    width: calc(100% - 115px);
+    padding-right: 0;
+    margin-bottom: 0;
   }
 }
 

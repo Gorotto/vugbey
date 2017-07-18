@@ -12,6 +12,9 @@
   float: none;
   margin: 100px auto 0;
   display: inline-block;
+  @include breakpoint(max-width 770px){
+    width: 100%;
+  }
   @include breakpoint(max-width 670px){
     width: 100%;
   }
@@ -25,10 +28,15 @@
   p{
     line-height: 24px;
   }
+  @include breakpoint(max-width 770px){
+    width: 33.3%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
   @include breakpoint(max-width 670px){
     width: 100%;
     margin-bottom: 40px;
-    padding: 0 40px;
+    padding: 0 20px;
     box-sizing: border-box;
     &:last-of-type{
       margin-bottom: 0;

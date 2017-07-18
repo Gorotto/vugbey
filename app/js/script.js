@@ -78,5 +78,27 @@ $(window).on("scroll load resize", function(){
 });
 /*count-block*/
 
+var windowWidth = $(window).width();
+
+  $(".header__menu_toggle").click(function () {
+      $(".sandwich").toggleClass("active");
+  });
+
+  if (windowWidth < 769) {
+      $(".header__menu a").click(function () {
+          $(".header__menu").fadeOut(600);
+          $(".sandwich").toggleClass("active").append("<span>");
+      });
+
+      $(".header__menu_toggle").click(function () {
+          if ($(".header__menu ").is(":visible")) {
+              $(".header__menu ").fadeOut(600);
+              $(".header__menu  li a").removeClass("fadeInUp animated");
+          } else {
+              $(".header__menu").fadeIn(600);
+              $(".header__menu li a").addClass("fadeInUp animated");
+          }
+      });
+  }
 
 });
