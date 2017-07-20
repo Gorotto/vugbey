@@ -85,9 +85,22 @@ p{
   display: inline-block;
   margin: 0;
   color: #24282f;
-  line-height: 36px;
+  // line-height: 36px;
+  line-height: 24px;
 }
 
+.small-title{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: left;
+  color: $gold;
+  font-size: 14px;
+  font-family: $nb;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 .btn{
   min-width: 164px;
   height: 50px;
@@ -107,6 +120,40 @@ p{
   }
 }
 
+input, textarea{
+  height: 38px;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #999;
+  font-family: $or;
+  font-size: 16px;
+  display: inline-block;
+}
+
+textarea{
+  height: 250px;
+  resize: none;
+}
+
+.send-btn{
+  float: left;
+  position: relative;
+  min-width: 148px;
+  height: 50px;
+  background-color: $gold;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  outline: none;
+  border: none;
+}
 
 .show-more{
   margin-top: 70px;

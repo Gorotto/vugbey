@@ -56,6 +56,7 @@
       display: inline-block;
       list-style-type: none;
       margin-left: 40px;
+      position: relative;
       &:first-of-type{
         margin-left: 0;
       }
@@ -71,6 +72,16 @@
       @include breakpoint(max-width 770px){
         margin-left: 30px;
       }
+    }
+    li.active:after{
+      content: "";
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      height: 3px;
+      bottom: -43px;
+      background-color: $gold;
     }
   }
   @include breakpoint(max-width 670px){
