@@ -12,10 +12,10 @@
   float: none;
   margin: 100px auto 0;
   display: inline-block;
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 100%;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
   }
 }
@@ -28,12 +28,12 @@
   p{
     line-height: 24px;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 33.3%;
     padding: 0 10px;
     box-sizing: border-box;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     margin-bottom: 40px;
     padding: 0 20px;
@@ -73,7 +73,7 @@
     display: inline-block;
     left: calc(50% - 20px);
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     margin-bottom: 20px;
   }
 }

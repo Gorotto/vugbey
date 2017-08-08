@@ -18,10 +18,10 @@
     width: 360px;
     height: 100%;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     display: none;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     display: none;
   }
 }
@@ -44,13 +44,13 @@
     width: 100%;
     float: left;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 100%;
     margin-top: 0;
     padding-right: 40px;
     padding-left: 40px;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     margin-top: 0;
     padding-right: 20px;

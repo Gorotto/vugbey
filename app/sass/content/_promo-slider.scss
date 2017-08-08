@@ -15,6 +15,12 @@
   height: 700px;
   display: inline-block;
   text-align: center;
+  @include breakpoint($tablet-breakpoint){
+    height: 650px;
+  }
+  @include breakpoint($phone-breakpoint){
+    height: 500px;
+  }
   img{
     object-fit: cover;
     width: 100%;
@@ -165,9 +171,17 @@
     background-color: $gold;
     color: #fff;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 100%;
     left: 0;
+    top: 40%;
+    padding: 0 70px;
+    box-sizing: border-box;
+  }
+  @include breakpoint($phone-breakpoint){
+    width: 100%;
+    left: 0;
+    top: 20%;
     padding: 0 70px;
     box-sizing: border-box;
   }

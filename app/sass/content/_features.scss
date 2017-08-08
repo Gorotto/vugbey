@@ -12,7 +12,7 @@
   float: left;
   position: relative;
   margin-top: 120px;
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     margin-top: 40px;
   }
 }
@@ -20,7 +20,7 @@
 .features__wrap_left{
   width: 40%;
   float: left;
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 50%;
     padding-left: 40px;
     padding-right: 40px;
@@ -29,7 +29,7 @@
       margin-bottom: 0;
     }
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -43,7 +43,7 @@
 .features__wrap_right{
   width: 40%;
   float: right;
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 50%;
     padding-left: 40px;
     padding-right: 40px;
@@ -52,7 +52,7 @@
       margin-bottom: 0;
     }
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -85,7 +85,7 @@
   &:last-of-type{
     margin-bottom: 0;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     margin-bottom: 40px;
   }
 }

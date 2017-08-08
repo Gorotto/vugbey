@@ -23,7 +23,7 @@
     text-transform: uppercase;
     outline: none;
     margin: 0 5px;
-    @include breakpoint(max-width 670px){
+    @include breakpoint($phone-breakpoint){
       text-align: center;
       font-size: 14px;
       // margin: 0 2px;
@@ -34,7 +34,7 @@
   .mixitup-control-active{
     color: $gold;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     text-align: left;
   }
 }
@@ -61,10 +61,10 @@
   &:hover .thumb-hover{
     display: block;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 33.3%;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 50%;
     height: 200px;
   }

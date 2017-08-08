@@ -22,7 +22,7 @@
     color: #fff;
     margin-top: 30px;
     margin-bottom: 1px;
-    @include breakpoint(max-width 670px){
+    @include breakpoint($phone-breakpoint){
       margin-top: 10px;
     }
   }
@@ -31,11 +31,11 @@
     line-height: 24px;
     margin: 21px auto 0;
     width: 90%;
-    @include breakpoint(max-width 670px){
+    @include breakpoint($phone-breakpoint){
       width: 100%;
     }
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     margin-bottom: 40px;
     padding-left: 20px;

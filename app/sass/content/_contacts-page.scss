@@ -11,7 +11,9 @@
   width: 60%;
   float: left;
   position: relative;
-
+  @include breakpoint($phone-breakpoint){
+    width: 100%;
+  }
 }
 
 .contacts-wrap__info{
@@ -28,6 +30,9 @@
     line-height: 24px;
     width: 70%;
     text-align: left;
+    @include breakpoint($tablet-breakpoint){
+      width: 90%;
+    }
   }
   p{
     margin-bottom: 20px;
@@ -38,6 +43,18 @@
   }
   a:hover{
     color: $gold;
+  }
+  @include breakpoint($tablet-breakpoint){
+    width: 40%;
+    float: left;
+    margin-left: 0;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+  @include breakpoint($phone-breakpoint){
+    width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
   }
 }
 

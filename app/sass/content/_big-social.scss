@@ -12,6 +12,10 @@
   width: 25%;
   float: left;
   margin-bottom: 40px;
+  @include breakpoint($phone-breakpoint){
+    width: 50%;
+    text-align: center;
+  }
   a{
     width: 64px;
     height: 64px;
@@ -24,6 +28,9 @@
     i{
       color: #6e7279;
       transform: translateY(50%);
+      @include breakpoint($tablet-breakpoint){
+        font-size: 1.7em;
+      }
     }
     &:hover{
       background-color: $gold;
@@ -31,6 +38,15 @@
       i{
         color: #fff;
       }
+    }
+    @include breakpoint($tablet-breakpoint){
+      size: 45px;
+      margin-right: 10px;
+    }
+    @include breakpoint($phone-breakpoint){
+      margin: 0 auto;
+      display: inline-block;
+      float: none;
     }
   }
 }
@@ -45,9 +61,21 @@
   text-transform: uppercase;
   width: calc(100% - 84px);
   margin-top: 10px;
+  @include breakpoint($tablet-breakpoint){
+    font-size: 15px;
+    width: calc(100% - 55px);
+    line-height: 14px;
+  }
+  @include breakpoint($phone-breakpoint){
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .big-socila__item_text{
   font-size: 12px;
   margin-top: 0;
+  @include breakpoint($tablet-breakpoint){
+
+  }
 }

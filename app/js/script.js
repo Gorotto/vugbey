@@ -55,6 +55,7 @@ $(".how-we-work__content_row-title").click(function () {
 /*count-block*/
 var show = true;
 var countbox = "#counts";
+if ($('#counts').length > 0) {
 $(window).on("scroll load resize", function(){
 
     if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
@@ -76,6 +77,7 @@ $(window).on("scroll load resize", function(){
         show = false;
     }
 });
+}
 /*count-block*/
 
   var windowWidth = $(window).width();

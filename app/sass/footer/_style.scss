@@ -23,13 +23,13 @@
     color: rgba(255, 255, 255, 0.65);
     line-height: 24px;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     width: 50%;
     margin-right: 0;
     padding-left: 40px;
     box-sizing: border-box;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     margin-right: 0;
     padding-left: 20px;
@@ -63,7 +63,7 @@
   a:hover{
     color: $gold;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     float: right;
     width: 50%;
     margin-right: 0;
@@ -71,7 +71,7 @@
     padding-left: 72px;
     padding-right: 40px;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     margin-right: 0;
     margin-top: 40px;
@@ -134,11 +134,11 @@
       background-color: $gold;
     }
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     padding-right: 40px;
     box-sizing: border-box;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100%;
     margin-right: 0;
     margin-top: 40px;
@@ -159,7 +159,7 @@
   p{
     color: rgba(255, 255, 255, 0.65);
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     .container{
       padding-left: 40px;
       padding-right: 40px;
@@ -167,7 +167,7 @@
     }
 
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     .container{
       padding-left: 0;
       padding-right: 0;

@@ -37,10 +37,10 @@ h2{
   position: relative;
   display: inline-block;
   float: left;
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     font-size: 50px;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     font-size: 40px;
   }
 }

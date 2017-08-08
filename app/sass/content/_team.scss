@@ -17,11 +17,11 @@
   box-sizing: border-box;
   flex-flow: row wrap;
   margin-top: 75px;
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     padding-left: 20px;
     padding-right: 20px;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -29,10 +29,10 @@
 
 .team__wrap_item{
   flex-basis: 50%;
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     margin-bottom: 40px;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     flex-basis: 100%;
     margin-bottom: 40px;
     &:last-of-type{
@@ -74,7 +74,7 @@
     size: 100%;
 
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: 100px;
     height: 100px;
   }
@@ -108,10 +108,10 @@
     padding-right: 10px;
     box-sizing: border-box;
   }
-  @include breakpoint(max-width 770px){
+  @include breakpoint($tablet-breakpoint){
     margin-bottom: 0;
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($phone-breakpoint){
     width: calc(100% - 115px);
     padding-right: 0;
     margin-bottom: 0;
