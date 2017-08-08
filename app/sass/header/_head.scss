@@ -10,7 +10,10 @@
 .header__logo-wrap{
   width: 30%;
   float: left;
-  @include breakpoint(max-width 670px){
+  @include breakpoint($tablet-breakpoint){
+    width: 30%;
+  }
+  @include breakpoint($phone-breakpoint){
     width: 70%;
   }
 }
@@ -46,7 +49,6 @@
   float: right;
   position: relative;
   text-align: right;
-  // transition: all .3s ease .15s;
   ul{
     width: 100%;
     margin: 0;
@@ -57,6 +59,9 @@
       list-style-type: none;
       margin-left: 40px;
       position: relative;
+      @include breakpoint($tablet-breakpoint){
+        margin-left: 4%;
+      }
       &:first-of-type{
         margin-left: 0;
       }
@@ -69,22 +74,32 @@
           color: $hover-color;
         }
       }
-      @include breakpoint(max-width 770px){
-        margin-left: 30px;
+    }
+    li.active{
+      @include breakpoint($phone-breakpoint){
+        a{
+          color: $gold;
+        }
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 3px;
+        bottom: -43px;
+        background-color: $gold;
+        @include breakpoint($phone-breakpoint){
+          display: none;
+        }
       }
     }
-    li.active:after{
-      content: "";
-      display: inline-block;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      height: 3px;
-      bottom: -43px;
-      background-color: $gold;
-    }
   }
-  @include breakpoint(max-width 670px){
+  @include breakpoint($tablet-breakpoint){
+    width: calc(100% - 30%)
+  }
+  @include breakpoint($phone-breakpoint){
     display: none;
     position: relative;
     left: 0;
@@ -130,7 +145,7 @@
   span {
     display: block;
    }
- @include breakpoint(max-width 670px){
+ @include breakpoint($phone-breakpoint){
   display: block;
  }
 }

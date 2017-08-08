@@ -78,13 +78,13 @@ $(window).on("scroll load resize", function(){
 });
 /*count-block*/
 
-var windowWidth = $(window).width();
+  var windowWidth = $(window).width();
 
   $(".header__menu_toggle").click(function () {
       $(".sandwich").toggleClass("active");
   });
 
-  if (windowWidth < 769) {
+  if (windowWidth < 671) {
       $(".header__menu a").click(function () {
           $(".header__menu").fadeOut(600);
           $(".sandwich").toggleClass("active").append("<span>");
@@ -101,7 +101,7 @@ var windowWidth = $(window).width();
       });
   }
   /*map*/
-  google.maps.event.addDomListener(window, 'load', init);
+  /*google.maps.event.addDomListener(window, 'load', init);
 
   function init() {
       // Basic options for a simple Google Map
@@ -132,6 +132,6 @@ var windowWidth = $(window).width();
           map: map,
           title: 'VUGBEY'
       });
-  }
+  }*/
   /*map*/
-});
+  });

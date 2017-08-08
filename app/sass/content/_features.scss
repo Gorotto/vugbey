@@ -70,8 +70,17 @@
   p{
     float: left;
     width: calc(100% - 80px);
-    line-height: 24px;
     margin: 0;
+    display: block;
+    display: -webkit-box;
+    position: relative;
+    height: calc(14px * 1.5 * 4);
+    float: left;
+    line-height: 1.5;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   &:last-of-type{
     margin-bottom: 0;

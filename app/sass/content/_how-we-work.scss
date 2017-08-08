@@ -33,7 +33,17 @@
   text-align: left;
   padding-right: 10%;
   box-sizing: border-box;
-
+  small{
+    margin: 13px 0;
+    font-family: $or;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    color: #24282f;
+    line-height: 24px;
+    width: 100%;
+    float: left;
+  }
   @include breakpoint(max-width 770px){
     width: 100%;
     margin-top: 0;

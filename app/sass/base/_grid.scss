@@ -10,24 +10,55 @@
 .container {
     @extend %clearfix;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 766px;
-    }
+
+
+@include breakpoint($tablet-breakpoint){
+  .container{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
 }
-@media (min-width: 992px) {
-    .container {
-        width: 990px;
-    }
+@include breakpoint($phone-breakpoint){
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}
+@include breakpoint($desktop-breakpoint){
+  .container {
+    width: 90%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}
+@include breakpoint($desktop-large-breakpoint){
+  .container {
+    width: 75%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
 }
 
-@media (min-width: 1200px) {
-    .container {
-        width: 1190px;
-    }
-}
-@media (min-width: 1500px) {
-    .container {
-        width: 1395px;
-    }
-}
+// @media (min-width: 768px) {
+//     .container {
+//         width: 766px;
+//     }
+// }
+// @media (min-width: 992px) {
+//     .container {
+//         width: 990px;
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .container {
+//         width: 1190px;
+//     }
+// }
+// @media (min-width: 1500px) {
+//     .container {
+//         width: 1395px;
+//     }
+// }
